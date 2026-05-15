@@ -1,6 +1,9 @@
 USE DATABASE LINKEDIN;
 USE SCHEMA GOLD;
 
+-- COUCHE GOLD : vues analytiques prêtes pour Streamlit
+-- QUALIFY + ROW_NUMBER() : syntaxe Snowflake pour filtrer
+
 -- Analyse 1 : Top 10 titres par industrie
 CREATE OR REPLACE VIEW v_top_titles_by_industry AS
 SELECT industry_id, title, COUNT(*) AS nb_offres
@@ -54,4 +57,5 @@ WHERE work_type IS NOT NULL
 GROUP BY 1
 ORDER BY 2 DESC;
 
+-- Vérification
 SELECT * FROM v_jobs_by_company_size;
