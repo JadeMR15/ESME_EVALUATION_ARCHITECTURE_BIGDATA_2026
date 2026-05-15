@@ -46,4 +46,16 @@ df2 = session.sql("""
     FROM LINKEDIN.GOLD.v_top_salaries_by_industry
     WHERE industry_id = '1'
 """).to_pandas()
+st.bar_chart(df2.set_index('TITRE')['SALAIRE_MOYEN'])    FROM LINKEDIN.GOLD.v_top_titles_by_industry
+    WHERE industry_id = '1'
+""").to_pandas()
+st.bar_chart(df1.set_index('TITRE')['OFFRES'])
+
+# Analyse 2 : Top 10 salaires par industrie
+st.header("5. Top 10 postes les mieux rémunérés")
+df2 = session.sql("""
+    SELECT title AS Titre, avg_max_salary AS Salaire_Moyen
+    FROM LINKEDIN.GOLD.v_top_salaries_by_industry
+    WHERE industry_id = '1'
+""").to_pandas()
 st.bar_chart(df2.set_index('TITRE')['SALAIRE_MOYEN'])
