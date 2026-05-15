@@ -81,6 +81,11 @@ Solution : utiliser CASE WHEN remote_allowed = '1.0' THEN TRUE ELSE FALSE END.
 Snowflake revenait sur le schéma PUBLIC automatiquement.
 Solution : toujours préciser USE DATABASE et USE SCHEMA en début de script.
 
+### Problème 5 — JOIN incorrect sur company_name
+La colonne company_name dans job_postings contenait des IDs numériques 
+et non des noms d'entreprises. Solution : faire le JOIN sur 
+jp.company_name::INTEGER = c.company_id au lieu du nom.
+
 ## 6. Répartition des tâches
 
 Projet réalisé en binôme : Jade et Olivia.
