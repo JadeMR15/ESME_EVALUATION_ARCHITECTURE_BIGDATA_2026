@@ -1,10 +1,10 @@
 # Rapport — Analyse des Offres d'Emploi LinkedIn avec Snowflake
 
-![Analyse 1](../analyse1.png)
-![Analyse 2](../analyse2.png)
-![Analyse 3](../analyse3.png)
-![Analyse 4](../analyse4.png)
-![Analyse 5](../analyse5.png)
+![Analyse 1](../analyse%201.png)
+![Analyse 2](../analyse%202.png)
+![Analyse 3](../analyse%203.png)
+![Analyse 4](../analyse%204.png)
+![Analyse 5](../analyse%205.png)
 
 ## 1. Introduction
 Ce projet analyse plusieurs milliers d'offres d'emploi LinkedIn en utilisant Snowflake comme entrepôt de données et Streamlit 
