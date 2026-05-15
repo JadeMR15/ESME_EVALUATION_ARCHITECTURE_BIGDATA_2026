@@ -1,11 +1,10 @@
 # Rapport — Analyse des Offres d'Emploi LinkedIn avec Snowflake
 
-![Analyse 1](../analyse1.png)
-![Analyse 2](../analyse2.png)
-![Analyse 3](../analyse3.png)
-![Analyse 4](../analyse4.png)
-![Analyse 5](../analyse5.png)
-
+![Analyse 1](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse1.png)
+![Analyse 2](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse2.png)
+![Analyse 3](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse3.png)
+![Analyse 4](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse4.png)
+![Analyse 5](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse5.png)
 ## 1. Introduction
 Ce projet analyse plusieurs milliers d'offres d'emploi LinkedIn en utilisant Snowflake comme entrepôt de données et Streamlit 
 pour les visualisations.
