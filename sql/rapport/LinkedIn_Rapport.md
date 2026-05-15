@@ -48,22 +48,27 @@ Création de 5 vues analytiques avec QUALIFY et ROW_NUMBER().
 
 ### Analyse 1 — Top 10 titres par industrie
 Utilisation de ROW_NUMBER() avec QUALIFY pour filtrer le top 10.
+
 ![Analyse 1](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse1.png)
 
 ### Analyse 2 — Top 10 postes les mieux rémunérés
 AVG(max_salary) groupé par industrie et titre.
+
 ![Analyse 2]![Analyse 2](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse2.png)
 
 ### Analyse 3 — Répartition par taille d'entreprise
 JOIN entre job_postings et companies sur le nom d'entreprise.
+
 ![Analyse 3](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse3.png)
 
 ### Analyse 4 — Répartition par secteur d'activité
 COUNT des offres groupé par industry_id.
+
 ![Analyse 4](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse4.png)
 
 ### Analyse 5 — Répartition par type d'emploi
 COUNT groupé par work_type : Full-time 12844, Contract 1739, etc.
+
 ![Analyse 5](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse5.png)
 
 ## 5. Problèmes rencontrés et solutions
