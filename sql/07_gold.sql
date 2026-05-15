@@ -18,6 +18,7 @@ WHERE max_salary IS NOT NULL
 GROUP BY 1, 2
 QUALIFY ROW_NUMBER() OVER (PARTITION BY industry_id ORDER BY AVG(max_salary) DESC) <= 10;
 
+-- Analyse 3 : Par taille d'entreprise
 CREATE OR REPLACE VIEW v_jobs_by_company_size AS
 SELECT
   CASE c.company_size
@@ -32,7 +33,8 @@ SELECT
   END AS taille,
   COUNT(*) AS nb_offres
 FROM LINKEDIN.SILVER.job_postings jp
-JOIN LINKEDIN.SILVER.companies c ON jp.company_name = TRIM(c.name)
+JOIN LINKEDIN.SILVER.companies c
+  ON jp.company_name::INTEGER = c.company_id
 WHERE c.company_size IS NOT NULL
 GROUP BY 1;
 
@@ -52,4 +54,4 @@ WHERE work_type IS NOT NULL
 GROUP BY 1
 ORDER BY 2 DESC;
 
-SELECT * FROM v_jobs_by_work_type;
+SELECT * FROM v_jobs_by_company_size;
