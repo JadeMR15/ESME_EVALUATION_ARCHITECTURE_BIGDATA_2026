@@ -48,20 +48,23 @@ Création de 5 vues analytiques avec QUALIFY et ROW_NUMBER().
 
 ### Analyse 1 — Top 10 titres par industrie
 Utilisation de ROW_NUMBER() avec QUALIFY pour filtrer le top 10.
-
-
+![Top 10 titres par industrie](../Top%2010%20titres%20par%20industrie.png)
 
 ### Analyse 2 — Top 10 postes les mieux rémunérés
 AVG(max_salary) groupé par industrie et titre.
+![Top 10 postes les mieux rémunérés](../Top%2010%20postes%20les%20mieux%20r%C3%A9mun%C3%A9r%C3%A9s%20.png)
 
 ### Analyse 3 — Répartition par taille d'entreprise
 JOIN entre job_postings et companies sur le nom d'entreprise.
+![Répartition par taille d'entreprise](../R%C3%A9partition%20par%20taille%20d%27entreprise.png)
 
 ### Analyse 4 — Répartition par secteur d'activité
 COUNT des offres groupé par industry_id.
+![Répartition par secteur d'activité](../R%C3%A9partition%20par%20secteur%20d%27activit%C3%A9.png)
 
 ### Analyse 5 — Répartition par type d'emploi
 COUNT groupé par work_type : Full-time 12844, Contract 1739, etc.
+![Répartition par type d'emploi](../R%C3%A9partition%20par%20type%20d%27emploi.png)
 
 ## 5. Problèmes rencontrés et solutions
 
