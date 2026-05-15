@@ -54,7 +54,7 @@ Utilisation de ROW_NUMBER() avec QUALIFY pour filtrer le top 10.
 ### Analyse 2 — Top 10 postes les mieux rémunérés
 AVG(max_salary) groupé par industrie et titre.
 
-![Analyse 2]![Analyse 2](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse2.png)
+![Analyse 2](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse2.png)
 
 ### Analyse 3 — Répartition par taille d'entreprise
 JOIN entre job_postings et companies sur le nom d'entreprise.
