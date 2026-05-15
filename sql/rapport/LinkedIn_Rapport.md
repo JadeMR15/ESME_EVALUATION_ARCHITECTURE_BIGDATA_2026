@@ -93,21 +93,3 @@ Solution : toujours préciser USE DATABASE et USE SCHEMA en début de script.
 La colonne company_name dans job_postings contenait des IDs numériques 
 et non des noms d'entreprises. Solution : faire le JOIN sur 
 jp.company_name::INTEGER = c.company_id au lieu du nom.
-
-## 6. Répartition des tâches
-
-Projet réalisé en binôme : Jade et Olivia.
-
-**Jade :**
-- Création de la base de données et des schémas (Bronze, Silver, Gold)
-- Création du stage externe et des file formats
-- Chargement des données CSV avec COPY INTO
-- Création des vues Gold (analyses 1, 2 et 3)
-- Développement des visualisations Streamlit (analyses 1, 2 et 3)
-
-**Olivia :**
-- Création des tables Bronze (CSV et JSON)
-- Chargement des données JSON avec COPY INTO
-- Transformation des données en couche Silver
-- Création des vues Gold (analyses 4 et 5)
-- Développement des visualisations Streamlit (analyses 4 et 5)
