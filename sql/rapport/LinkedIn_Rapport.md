@@ -1,10 +1,5 @@
 # Rapport — Analyse des Offres d'Emploi LinkedIn avec Snowflake
 
-![Analyse 1](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse1.png)
-![Analyse 2](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse2.png)
-![Analyse 3](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse3.png)
-![Analyse 4](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse4.png)
-![Analyse 5](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse5.png)
 ## 1. Introduction
 Ce projet analyse plusieurs milliers d'offres d'emploi LinkedIn en utilisant Snowflake comme entrepôt de données et Streamlit 
 pour les visualisations.
@@ -53,23 +48,23 @@ Création de 5 vues analytiques avec QUALIFY et ROW_NUMBER().
 
 ### Analyse 1 — Top 10 titres par industrie
 Utilisation de ROW_NUMBER() avec QUALIFY pour filtrer le top 10.
-![Analyse 1](https://github.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/blob/main/Top%2010%20titres%20par%20industrie.png?raw=true)
+![Analyse 1](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse1.png)
 
 ### Analyse 2 — Top 10 postes les mieux rémunérés
 AVG(max_salary) groupé par industrie et titre.
-![Analyse 2](https://github.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/edit/main/sql/rapport/LinkedIn_Rapport.md#:~:text=10%20postes%20les-,mieux,-rémunérés%20.png?raw=true)
+![Analyse 2]![Analyse 2](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse2.png)
 
 ### Analyse 3 — Répartition par taille d'entreprise
 JOIN entre job_postings et companies sur le nom d'entreprise.
-![Répartition par taille d'entreprise](../R%C3%A9partition%20par%20taille%20d%27entreprise.png)
+![Analyse 3](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse3.png)
 
 ### Analyse 4 — Répartition par secteur d'activité
 COUNT des offres groupé par industry_id.
-![Répartition par secteur d'activité](../R%C3%A9partition%20par%20secteur%20d%27activit%C3%A9.png)
+![Analyse 4](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse4.png)
 
 ### Analyse 5 — Répartition par type d'emploi
 COUNT groupé par work_type : Full-time 12844, Contract 1739, etc.
-![Répartition par type d'emploi](../R%C3%A9partition%20par%20type%20d%27emploi.png)
+![Analyse 5](https://raw.githubusercontent.com/JadeMR15/ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026/main/analyse5.png)
 
 ## 5. Problèmes rencontrés et solutions
 
