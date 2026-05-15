@@ -48,7 +48,7 @@ Création de 5 vues analytiques avec QUALIFY et ROW_NUMBER().
 
 ### Analyse 1 — Top 10 titres par industrie
 Utilisation de ROW_NUMBER() avec QUALIFY pour filtrer le top 10.
-![Top 10 titres par industrie](../Top%2010%20titres%20par%20industrie.png)
+![Analyse 1](../Top%2010%20titres%20par%20industrie.png)
 
 ### Analyse 2 — Top 10 postes les mieux rémunérés
 AVG(max_salary) groupé par industrie et titre.
