@@ -1,6 +1,10 @@
 USE DATABASE LINKEDIN;
 USE SCHEMA BRONZE;
 
+-- Chargement des fichiers CSV
+-- FORCE = TRUE : recharge même si le fichier a déjà été chargé
+-- ON_ERROR = CONTINUE : ignore les lignes avec des erreurs sans bloquer
+
 COPY INTO job_postings
   FROM @linkedin_stage/job_postings.csv
   FILE_FORMAT = (FORMAT_NAME = csv_format)
@@ -21,6 +25,7 @@ COPY INTO job_skills
   FILE_FORMAT = (FORMAT_NAME = csv_format)
   FORCE = TRUE;
 
+-- Chargement des fichiers JSON dans les colonnes VARIANT
 COPY INTO companies_raw
   FROM @linkedin_stage/companies.json
   FILE_FORMAT = (FORMAT_NAME = json_format)
@@ -41,6 +46,7 @@ COPY INTO job_industries_raw
   FILE_FORMAT = (FORMAT_NAME = json_format)
   FORCE = TRUE;
 
+-- Vérification des chargements
 SELECT COUNT(*) FROM job_postings;
 SELECT COUNT(*) FROM benefits;
 SELECT COUNT(*) FROM companies_raw;
